@@ -1,0 +1,48 @@
+
+body{
+	background-color:rgb(4,43,95);
+}
+.movieContainer{
+	height:450px;
+	margin:0;
+	overflow:hidden;
+	position:relative;
+	
+}
+.logo:link, logo:visited{
+	
+	display:inline-block;
+}
+.logo > img{
+	width:100px;
+}
+figure.movieContainer img{
+	height:100%;
+	width:100%;
+	object-fit:cover;
+}
+.heading{
+	position:absolute;
+	bottom:0;
+	left:0;
+	padding:10px;
+	background:rgb(4,57,114);
+	color:white;
+	width:100%;
+}
+.Overview{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	background-color:white;
+	padding:20px;
+	transform:translateY(100%);
+	transition: all .4s ease-in-out;
+}
+
+.movieContainer:hover .Overview,
+.movieContainer:active .Overview,
+.movieContainer:focus .Overview{
+	transform:translateY(0);
+}
